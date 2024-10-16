@@ -38,14 +38,14 @@ class Main {
     public void printInvertedPyramid(int N) {
         // TODO: Implement this method
 
-        for(int i=1;i<N-2;i+=2){
-            for (int j=1;j<i;j+=2){
-            System.out.printf(" ");
-        }
-            for (int j=N;j>1;j--){
-                System.out.printf("*");
+        for (int i = (2*N-1)/2-1; i > -1; i--){
+            for (int j = 0; j < N - i - 1; j++) {
+                System.out.print(" ");
             }
-            System.out.printf("\n");
+            for (int k = 0; k < 2 * i + 1; k++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
         }
     }
 }
