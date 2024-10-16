@@ -18,11 +18,26 @@ class Main {
 
     public void printPyramid(int N) {
         // TODO: Implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+
+        for (int i = 0; i < (2*N-1)/2; i++){
+            for (int j = 0; j < N - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < 2 * i + 1; k++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+
+        for (int i = 0; i < 2*N-1; i++){
+            System.out.print("*");
+        }
+        System.out.print("\n");
     }
 
     public void printInvertedPyramid(int N) {
         // TODO: Implement this method
+
         for(int i=1;i<N-2;i+=2){
             for (int j=1;j<i;j+=2){
             System.out.printf(" ");
