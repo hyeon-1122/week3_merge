@@ -23,6 +23,14 @@ class Main {
 
     public void printInvertedPyramid(int N) {
         // TODO: Implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        for(int i=1;i<N-2;i+=2){
+            for (int j=1;j<i;j+=2){
+            System.out.printf(" ");
+        }
+            for (int j=N;j>1;j--){
+                System.out.printf("*");
+            }
+            System.out.printf("\n");
+        }
     }
 }
